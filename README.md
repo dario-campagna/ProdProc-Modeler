@@ -16,6 +16,8 @@
 
 A detailed description of *ProdProc* and *ProdProc Modeler* can be found in: "[D. CAMPAGNA. Product and Production Process Modeling and Configuration. PhD thesis, Università degli Studi di Perugia, 2012](https://github.com/dario-campagna/ProdProc-Modeler/blob/master/PhD%20Thesis%20-%20Dario%20Campagna.pdf)".
 
+*ProdProc Modeler* is released under the terms of the GNU GENERAL PUBLIC LICENSE Version 3.0.
+
 ## Architecture and implementation details
 
 *ProdProc Modeler* consists of three main parts: a graphical user interface, a syntax checker, and a validity checker.
