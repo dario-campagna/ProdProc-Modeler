@@ -8,15 +8,25 @@
 
 *ProdProc Modeler* is a modeling system that allows a user to define a model of a configurable product and its production process using the *ProdProc* framework, to check model syntactic correctness, and to automatically generate product instances to check model validity.
 
-![Screenshot of ProdProc Modeler](https://github.com/dario-campagna/ProdProc-Modeler/blob/master/images/modeling_tool_screenshot.jpg)
+<p align="center">
+    <img 
+    src="https://github.com/dario-campagna/ProdProc-Modeler/blob/master/images/modeling_tool_screenshot.jpg"
+    alt="Screenshot of ProdProc Modeler">
+    <figcaption>Screenshot of <i>ProdProc Modeler</i>.</figcaption>
+</p>
 
-A detailed description of *ProdProc* and *ProdProc Modeler* can be found in: "[D. CAMPAGNA. Product and Production Process Modeling and Configuration. PhD thesis, Università degli Studi di Perugia, 2012](https://github.com/dario-campagna/ProdProc-Modeler/blob/master/PhD%20Thesis%20-Dario%20Campagna.pdf)".
+A detailed description of *ProdProc* and *ProdProc Modeler* can be found in: "[D. CAMPAGNA. Product and Production Process Modeling and Configuration. PhD thesis, Università degli Studi di Perugia, 2012](https://github.com/dario-campagna/ProdProc-Modeler/blob/master/PhD%20Thesis%20-%20Dario%20Campagna.pdf)".
 
 ## Architecture and implementation details
 
 *ProdProc Modeler* consists of three main parts: a graphical user interface, a syntax checker, and a validity checker.
 
-![ProdProc Modeler architecture](https://github.com/dario-campagna/ProdProc-Modeler/blob/master/images/modeling_tool_arch.jpg)
+<p align="center">
+    <img 
+    src="https://github.com/dario-campagna/ProdProc-Modeler/blob/master/images/modeling_tool_arch.jpg"
+    alt="ProdProc Modeler architecture">
+    <figcaption><i>ProdProc Modeler</i> architecture.</figcaption>
+</p>
 
 The graphical user interface has been implemented using the `PCE` library of SWI Prolog. The interface allows a user to create and save *ProdProc* models. Each model is saved into two files, one for the graphical elements drawn by a user (a file with extension `prp`), and one for the Prolog predicates defining its Prolog representation (a file with extension `pl`). Basically, the Prolog representation associates to each *ProdProc* modeling feature a predicate having has arguments the constituting elements of the feature. This representation is automatically generated once a graphical model has been created. For each (graphical) element of the model the interface creates the corresponding Prolog predicate.
 
@@ -44,4 +54,4 @@ Once a model has been saved, the user can starts the syntax and the validity che
 
 ## Examples
 
-The `example` directory contains two *ProdProc* models. `simple.prp` is a basic model as the name suggest. `building.prp` is the model presented in the [PhD Thesis](https://github.com/dario-campagna/ProdProc-Modeler/blob/master/PhD%20Thesis%20-Dario%20Campagna.pdf) for a building and its construction process.
+The `example` directory contains two *ProdProc* models. `simple.prp` is a basic model as the name suggest. `building.prp` is the model presented in the [PhD Thesis](https://github.com/dario-campagna/ProdProc-Modeler/blob/master/PhD%20Thesis%20-%20Dario%20Campagna.pdf) for a building and its construction process.
